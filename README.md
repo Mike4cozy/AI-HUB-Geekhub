@@ -6,7 +6,7 @@
 - is_location_exact
 
 ### multiplement
-- bed_type : 'Real Bed' = 0, 'Couch', 'Futon' = 1, 'Airbed' = 2, 'Pull-out Sofa' = 3 (解决办法：df.replace('x', 'y'))
+- bed_type : 'Real Bed' = 0, 'Couch' = 1, 'Futon' = 2, 'Airbed' = 3, 'Pull-out Sofa' = 4 (解决办法：df.replace('x', 'y'))
 
 ### 遇到的问题
 - [如何修改dataframe某一列的问题](https://www.jianshu.com/p/2557a805211f)
