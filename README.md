@@ -15,6 +15,11 @@
 - room_type : 'Entire home/apt' = 0, 'Private room' = 1, 'Shared room' = 2
 - is_business_travel_ready :'strict_14_with_grace_period' = 0, 'moderate' = 1, 'flexible' = 2
 
+## Data-cleaning dairy
+- first version, 我们从106列特征通过人工筛选的方式将 与价格没有关系的特征缩减为47列
+- second version, 我们将可分类的数据数字化, 将二元t/f换成1/0, 将多元成分也同样以数字的形式呈现。
+- third version, 我们根据first review feature 删除了一些数据, 从 31457行 到 18545行, 因为我们认为没有人所观看的房子的价格没有可借鉴的价值
+- Fourth version, 我们将host_response_rate中的null值 用剩余值的平均值替换
 
 ### 遇到的问题
 - [如何修改dataframe某一列的问题](https://www.jianshu.com/p/2557a805211f)
