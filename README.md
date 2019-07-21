@@ -21,6 +21,7 @@
 - third version, 我们根据first review feature 删除了一些数据, 从 31457行 到 18545行, 因为我们认为没有人所观看的房子的价格没有可借鉴的价值
 - Fourth version, 我们将host_response_rate中的null值 用剩余值的平均值替换
 - Fifth version, 我们将price和 extra_price改为数字格式, 例子（1,000格式改为数字格式 1000）
+- 720_1750 全部内容处理完成（独热码），未进一步drop行。next step : rule : [price <(50 * accomondates)] -> drop
 
 ### 遇到的问题
 - [如何修改dataframe某一列的问题](https://www.jianshu.com/p/2557a805211f)
