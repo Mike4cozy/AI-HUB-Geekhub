@@ -13,7 +13,7 @@
 ### multiplement
 - bed_type : 'Real Bed' = 0, 'Couch' = 1, 'Futon' = 2, 'Airbed' = 3, 'Pull-out Sofa' = 4 (解决办法：df.replace('x', 'y'))
 - room_type : 'Entire home/apt' = 0, 'Private room' = 1, 'Shared room' = 2
-- is_business_travel_ready :'strict_14_with_grace_period' = 0, 'moderate' = 1, 'flexible' = 2
+- cancellation_policy :'strict_14_with_grace_period' = 0, 'moderate' = 1, 'flexible' = 2
 
 ## Data-cleaning dairy
 - first version, 我们从106列特征通过人工筛选的方式将 与价格没有关系的特征缩减为47列
@@ -23,6 +23,7 @@
 - Fifth version, 我们将price和 extra_price改为数字格式, 例子（1,000格式改为数字格式 1000）
 - 720_1750 全部内容处理完成（独热码），未进一步drop行。next step : rule : [price <(50 * accomondates)] -> drop
 - 721_2300 保留 ([price > (50 * accomondates)] & [price > (50 * beds]) & [min_nights <= 3])
+- 722_2300 删除了 >2w & 9999的数据, beds < 50, bathrooms = 101.5 -> 1
 
 ### 遇到的问题
 - [如何修改dataframe某一列的问题](https://www.jianshu.com/p/2557a805211f)
